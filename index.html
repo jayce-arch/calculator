@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Minimal Calculator</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="script.js"></script>
+</head>
+
+<body>
+<div id="calculator">
+	<form>
+		<input type="text" id="result" disabled>
+		<div class="keypad">
+			<button type="button" value="9" onclick="addToInput('9')">9</button>
+			<button type="button" value="8" onclick="addToInput('8')">8</button>
+			<button type="button" value="7" onclick="addToInput('7')">7</button>
+			<button type="button" class="operator" value="/" onclick="addToInput('/')">&divide;</button>
+			
+			<button type="button" value="6" onclick="addToInput('6')">6</button>
+			<button type="button" value="5" onclick="addToInput('5')">5</button>
+			<button type="button" value="4" onclick="addToInput('4')">4</button>
+			<button type="button" class="operator" value="*" onclick="addToInput('*')">&times;</button>
+			
+			<button type="button" value="1" onclick="addToInput('1')">1</button>
+			<button type="button" value="2" onclick="addToInput('2')">2</button>
+			<button type="button" value="3" onclick="addToInput('3')">3</button>
+			<button type="button" class="operator" value="-" onclick="addToInput('-')">-</button>
+			
+			<button type="reset" class="clear" onclick="clearInput()">C</button>
+			<button type="button" value="0" onclick="addToInput('0')">0</button>
+			<button type="button" class="calculate" onclick="calculate()">=</button>
+			<button type="button" class="operator" value="+" onclick="addToInput('+')">+</button>
+		</div>
+	</form>
+</div>
+</body>
+</html>

@@ -1,0 +1,62 @@
+/* background color and font */
+body {
+	background-color: #222;
+	font-family: Arial, sans-serif;
+}
+
+/* calculator */
+#calculator {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: #333;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+	padding: 20px;
+}
+
+/* input field */
+#result {
+	background-color: #444;
+	color: #fff;
+	border: none;
+	border-radius: 5px;  
+	padding: 10px;
+	font-size: 24px;
+	text-align: right;
+	margin-bottom: 20px;
+}
+
+/* keypad */
+.keypad {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 10px;
+}
+
+/* buttons */
+button {
+	background-color: #666;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	padding: 10px;
+	font-size: 24px;
+	cursor: pointer;
+}
+
+/* operator buttons */
+.operator {
+	background-color: #888;
+}
+
+/* clear button */
+.clear {
+	background-color: #888;
+}
+
+/* calculate button */
+.calculate {
+	background-color: #ff4040;
+}
