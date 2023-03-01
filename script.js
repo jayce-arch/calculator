@@ -1,6 +1,6 @@
 function addToInput(val) {
     var result = document.getElementById("result");
-    if (val === "+" || val === "-" || val === "*" || val === "/") result.value += " " + val + " ";
+    if (val === "+" || val === "-" || val === "*" || val === "/" || val === "%") result.value += " " + val + " ";
     else result.value += val;
 }
 
